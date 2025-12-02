@@ -16,7 +16,7 @@ const recipeSection = document.getElementById("recipe-section");
 const apiKey = "0ed052bdd4cc4a3dbe7e7c61edae3c1b";
 
 
-// CALORIE CALCULATION
+
 const getCalorie = () => {
     let height = heightInput.value;
     let weight = weightInput.value;
@@ -44,7 +44,7 @@ const getCalorie = () => {
 };
 
 
-// FETCH MEALS
+
 const getMeals = async (BMR) => {
     document.getElementById("loader").style.display = "block";
 
@@ -59,9 +59,9 @@ const getMeals = async (BMR) => {
 };
 
 
-// GENERATE CARDS
+
 const generateMealsCard = (datas) => {
-    // Center nutrients header
+    
     mealsDetails.innerHTML = `
         <h2 style="text-align:center; margin-top:20px;">Nutrients</h2>
         <p style="text-align:center;">Calories: ${datas.nutrients.calories}</p>
@@ -101,7 +101,6 @@ const generateMealsCard = (datas) => {
 };
 
 
-// RECIPE DETAILS
 const btnRecipe = async (id) => {
     recipeSection.innerHTML = "";
     ingredientSection.innerHTML = "";
@@ -118,7 +117,7 @@ const btnRecipe = async (id) => {
         </h2>
     `;
 
-    // INGREDIENTS
+    
     let ingredHTML = info.extendedIngredients.map(i => `<li>${i.original}</li>`).join("");
 
     ingredientSection.innerHTML = `
@@ -128,7 +127,7 @@ const btnRecipe = async (id) => {
         </div>
     `;
 
-    // STEPS
+    
     let stepsHTML = info.analyzedInstructions[0].steps.map(s => `<li>${s.step}</li>`).join("");
 
     stepsSection.innerHTML = `
@@ -138,7 +137,7 @@ const btnRecipe = async (id) => {
         </div>
     `;
 
-    // EQUIPMENT
+    
     const equipURL = `https://api.spoonacular.com/recipes/${id}/equipmentWidget.json?apiKey=${apiKey}`;
     const eqRes = await fetch(equipURL);
     const eqData = await eqRes.json();
@@ -152,7 +151,7 @@ const btnRecipe = async (id) => {
         </div>
     `;
 
-    // Make columns side-by-side exactly like the image
+    
     document.querySelector("#ingredients").style.width = "33%";
     document.querySelector("#steps").style.width = "33%";
     document.querySelector("#equipment").style.width = "33%";
@@ -165,11 +164,12 @@ const btnRecipe = async (id) => {
     document.querySelector("#steps").style.textAlign = "left";
     document.querySelector("#equipment").style.textAlign = "left";
 
-    // Align the three columns
+    
     document.querySelector("#ingredients").parentElement.style.display = "flex";
     document.querySelector("#ingredients").parentElement.style.justifyContent = "space-evenly";
 };
  
 
-// BUTTON EVENT
+
 submit.addEventListener("click", getCalorie);
+
