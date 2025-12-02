@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" a href="./mealplanweb.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="headContainer">
+        <div class="navbar">
+            <div class="navbar">
+                <img src="https://meal-planner-project-js-om-prakash.netlify.app/assets/Logo.jpg" height="80px" width="200px"/>
+            </div>
+        <div class="navbar">
+            <a href="./mealplanweb.html">Home</a>
+             <a href="./about1.html">About</a>
+             <a href="./contact1.html">Contact</a>
+        </div>
+        </div>
+    </div>
+<div class="inputContainer">
+
+        <div>
+            <label>Enter Height (cm)</label><br>
+            <input class="input" type="number" id="height" placeholder="Height">
+        </div>
+
+        <div>
+            <label>Enter Weight (kg)</label><br>
+            <input class="input" type="number" id="weight" placeholder="Weight">
+        </div>
+
+        <div>
+            <label>Enter Age</label><br>
+            <input class="input" type="number" id="age" placeholder="Age">
+        </div>
+
+    </div>
+
+    <div class="dropDownContainer">
+
+        <div>
+            <label>Choose Gender</label><br>
+            <select class="dropDown" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Choose Activity Level</label><br>
+            <select class="dropDown" id="level">
+                <option value="light">Light</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+            </select>
+        </div>
+
+    </div>
+
+    <button id="generatebtn">Generate Meals</button>
+    <h3 id="loader" style="display:none; text-align:center;">Loading...</h3>
+
+    <!-- OUTPUT SECTION -->
+    <div style="padding: 2rem; font-family: sans-serif;">
+
+        <div id="details" class="my-4"></div>
+
+        <div id="cards-container" 
+             style="display:flex; flex-wrap:wrap; justify-content:center; gap:2rem;">
+        </div>
+
+        <h2 style="text-align:center; margin-top:3rem;">Recipe Details</h2>
+        <div id="recipe-section" style="margin-bottom:2rem;"></div>
+
+        <div style="display:flex; justify-content:space-evenly; margin-top:2rem;">
+            <div id="ingredients"></div>
+            <div id="steps"></div>
+            <div id="equipment"></div>
+        </div>
+
+    </div>
+  <div class="footer">
+        <div><p>Copyright &copy; 2023 All Rights Reserved.</p></div>
+    <div id="icons"><i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-youtube"></i></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

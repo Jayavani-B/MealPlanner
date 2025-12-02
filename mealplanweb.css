@@ -1,0 +1,203 @@
+.headContainer{
+    background-color: rgb(108, 177, 101);
+    width:100%;
+    margin-top:0%;
+
+
+ 
+}
+.navbar{
+    background-color: rgb(108, 177, 101);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     gap: 3rem;
+     padding-right: 24rem;
+    
+}
+
+a{
+     font-family: sans-serif;
+     font-size: 1rem;
+     margin-top: 3rem;
+    color: white;
+     text-decoration: none;
+}
+a:hover{
+    color: gray;
+}
+
+
+img{
+    justify-content: left;
+    padding: 5px;
+}
+body{
+    margin:0rem;
+}
+/* .heightContainer{
+    padding: 2rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    
+}
+.weightContainer{
+    padding: 2rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+.ageContainer{
+    padding: 2rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+} */
+ .inputContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+.input{
+    height: 2rem;
+    width: 19rem;
+    border-radius:0.3rem;
+    border: 1px solid;
+    border-color: gray;
+    font-size: 1.1rem;
+    border-width: 1px;
+    padding-left: 1rem;
+}
+.input:focus{
+    outline-color:rgb(rgb(72, 139, 201), green, blue); ;
+}
+
+.dropDownContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding: 2rem;
+}
+.dropDown{
+    height: 2.5rem;
+    width: 25rem;
+    border-radius: 0.3rem ;
+    border-color:gray ;
+    border-width: 1px;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    padding-left: 0.5rem;
+}
+button{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color:  rgb(108, 177, 101);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 2rem;
+    /* position: fixed; */
+    margin-left: 38rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: rgb(160, 212, 154) ;
+    border-color:  rgb(160, 212, 154) ;
+}
+/* #nuterients{
+    align-items: center;
+    width: 40rem;
+    height: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+    border: 1px solid gray;
+    /* background-color: thistle; */
+    /* margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    font-family: sans-serif;
+    text-align:center;
+    justify-content: center;
+}
+#paras{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1;
+
+} */ 
+/* .card{
+
+    margin: 1rem;
+    height: 25rem;
+    width: 20rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    
+}
+#card1{
+    align-items: center;
+    justify-content: center;
+}
+
+#dish{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    font-family: sans-serif;
+}
+#procards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+} */
+/* .procard{
+    border-radius: 1rem;
+    border: 1px solid gray;
+    margin: 2rem;
+    height: 50rem;
+    width: 20rem;
+} */
+
+
+.footer{
+    background-color: rgb(108, 177, 101);
+    margin-top: auto;
+    z-index: -1;
+    bottom: 0%;
+    width: 100%;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    gap: 12rem;
+    justify-content: center;
+}
+i{
+    height: 2rem;
+    width: 2rem;
+    padding-top: 1rem;
+} 
